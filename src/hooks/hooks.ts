@@ -21,7 +21,7 @@ export const useSectionInView = ({
     if (inView) {
       setActiveSession(sectionName);
     }
-  }, [ref, inView, setActiveSession]);
+  }, [ref, inView, setActiveSession, sectionName]);
 
   return { ref };
 };
