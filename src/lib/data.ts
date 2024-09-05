@@ -69,6 +69,8 @@ export const projects = [
   {
     title: "Community Fair (WIP)",
     path: "/community-fair",
+    liveUrl: "",
+    github: "",
     description: "A Fullstack web app built with NextJS and Supabase",
     tags: ["NextJS", "Supabase", "Tailwind", "ShadCN UI"],
     imageUrl: CommunityFairImage,
@@ -76,6 +78,8 @@ export const projects = [
   {
     title: "School Management App (Mobile)",
     path: "/school-management-app",
+    liveUrl: "",
+    github: "",
     description:
       "Designed and CoDeveloped a concept app for attendance management in a school",
     tags: ["React Native", "Supabase", "CSS"],
