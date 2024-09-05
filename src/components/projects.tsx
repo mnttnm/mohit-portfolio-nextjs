@@ -6,6 +6,7 @@ import { projects } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/hooks/hooks";
+import { TbBrandGithub, TbGlobe } from "react-icons/tb";
 
 const Projects = () => {
   const { ref } = useSectionInView({
@@ -38,6 +39,8 @@ const Project = ({
   description,
   imageUrl,
   tags,
+  github,
+  liveUrl,
 }: ProjectProps) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -59,7 +62,7 @@ const Project = ({
   return (
     <motion.div
       className="group relative sm:h-[20rem] max-w-[42rem] border border-black/5 dark:border-white/20 overflow-hidden rounded-lg shadow-4 bg-gray-100 hover:bg-gray-200
-      dark:bg-gray-700/30 dark:hover:bg-gray-800/70 backdrop-blur-md dark:hover:shadow-lg dark:hover:shadow-white/30 hover:shadow-md hover:shadow-black/20 transition"
+      dark:bg-gray-700/30 dark:hover:bg-gray-800/70 backdrop-blur-md dark:hover:shadow-md dark:hover:shadow-[#946263]/70 hover:shadow-md hover:shadow-[#EFB7B7]/70 transition"
       ref={ref}
       style={{
         scale: animationScale,
@@ -71,6 +74,14 @@ const Project = ({
       <section className="h-full flex flex-col sm:flex-row group-even:flex-row-reverse py-6 gap-6">
         <div className="flex flex-col gap-4 items-start justify-start flex-1 p-4">
           <h3 className="font-semibold text-xl">{title}</h3>
+          <div className="flex gap-2 -mt-1">
+            {github && <a href={github} target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 bg-gray-300/80 dark:bg-white/10 rounded-full p-2 dark:hover:text-gray-400">
+              <TbBrandGithub className="w-4 h-4" />
+            </a>}
+            {liveUrl && <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 bg-gray-300/80 dark:bg-white/10 rounded-full p-2 dark:hover:text-gray-400">
+              <TbGlobe className="w-4 h-4" />
+            </a>}
+          </div>
           <p className="leading-relaxed text-gray-700 dark:text-gray-200">
             {description}
           </p>
@@ -91,7 +102,7 @@ const Project = ({
             src={imageUrl}
             alt={`Image for project ${title}`}
             quality={95}
-            className="w-full h-full object-cover 
+            className="w-full h-full object-contain 
           group-even:rounded-r-lg group-odd:rounded-l-lg
           group-hover:scale-105
           group-hover:translate-x-3

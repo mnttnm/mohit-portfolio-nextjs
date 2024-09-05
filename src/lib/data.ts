@@ -1,4 +1,9 @@
 import projectImage from "@/../public/project-image.png";
+import FigmaPluginImage from "@/../public/figma-variable-explorer.png";
+import SchoolAppImage from "../../public/school-app.png";
+import CommunityFairImage from "../../public/community-explorer.png";
+import RaycastExtensionImage from "../../public/raycast-extension.png";
+
 import React from "react";
 import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
 
@@ -49,32 +54,32 @@ export const projects = [
       "React",
       "Next.js",
     ],
-    imageUrl: projectImage,
+    imageUrl: FigmaPluginImage,
+  },
+  {
+    title: "Raycast extension for Google Docs",
+    path: "/brain-basket",
+    liveUrl: "https://www.raycast.com/tatermohit/note-in-google-doc",
+    github: "https://github.com/mnttnm/raycast-note-in-doc",
+    description:
+      "An extension built on top of Google Docs APIs and Raycast's developer SDK ~250 users are currently using it",
+    tags: ["Google API", "Raycast", "Typescript", "React"],
+    imageUrl: RaycastExtensionImage,
+  },
+  {
+    title: "Community Fair (WIP)",
+    path: "/community-fair",
+    description: "A Fullstack web app built with NextJS and Supabase",
+    tags: ["NextJS", "Supabase", "Tailwind", "ShadCN UI"],
+    imageUrl: CommunityFairImage,
   },
   {
     title: "School Management App (Mobile)",
     path: "/school-management-app",
     description:
-      "An app built to make school management easier. I did the UI/UX myself as well",
-    tags: ["ReactNative", "Supabase", "CSS"],
-    imageUrl: projectImage,
-  },
-  {
-    title: "Brain Basket",
-    path: "/brain-basket",
-    description:
-      "A fullstack webapp built using Flutter and Firebase",
-    tags: ["Flutter", "Firebase", "Razorpay SDK"],
-    imageUrl: projectImage,
-  },
-  {
-    title: "Community Fair (Coming Soon)",
-    path: "/community-fair",
-    github: "https://github.com/mnttnm",
-    live: "https://github.com/mnttnm",
-    description: "An app to promote your communities and events",
-    tags: ["NextJS", "Supabase", "Tailwind", "ShadCN UI"],
-    imageUrl: projectImage,
+      "Designed and CoDeveloped a concept app for attendance management in a school",
+    tags: ["React Native", "Supabase", "CSS"],
+    imageUrl: SchoolAppImage,
   },
 ] as const;
 
