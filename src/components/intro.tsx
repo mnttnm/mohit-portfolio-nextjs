@@ -54,14 +54,14 @@ function Intro() {
           </motion.span>
         </div>
         <motion.h1
-          className="mx-10 mt-4 px-4 font-medium !leading-[1.5] text-center text-xl
+          className="mx-10 mt-4 px-4 font-normal !leading-[1.5] text-center text-xl
           md:text-2xl text-gray-600 dark:text-white/60"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
           Hi there! I &apos;m <strong>Mohit Tater</strong>, a software
           developer with over <strong>9 years of experience</strong>.
-          I specialize in <strong>frontend development</strong>,
+          I specialize in <strong>Frontend development</strong>,
           particularly with <strong>ReactJS</strong> and{" "}
           <strong>TypeScript</strong>. Currently seeking a{" "}
           <strong>frontend-focused position</strong> in an innovative
