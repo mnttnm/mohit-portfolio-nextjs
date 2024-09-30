@@ -42,6 +42,8 @@ export const projects = [
   {
     title: "Slicely: An Enterprise-Grade SaaS app",
     path: "/slicely",
+    liveUrl: "",
+    github: "",
     description:
       "An app built to allow you to manage and get most out of PDF data with the help of AI",
     tags: ["Next.js", "Supabase", "OpenAI", "TypeScript", "React"],
