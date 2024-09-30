@@ -1,6 +1,6 @@
 ## Portfolio website for Mohit Tater.
 
-Live at: https://tater-mohit.vercel.app/
+Live at: https://mohittater.in
 
 Tech stack:
 - Next.js
