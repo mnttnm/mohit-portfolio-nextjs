@@ -3,6 +3,7 @@ import FigmaPluginImage from "@/../public/figma-variable-explorer.png";
 import SchoolAppImage from "../../public/school-app.png";
 import CommunityFairImage from "../../public/community-explorer.png";
 import RaycastExtensionImage from "../../public/raycast-extension.png";
+import SlicelyImage from "@/../public/slicely.png";
 
 import React from "react";
 import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
@@ -38,6 +39,14 @@ export const links = [
 // if you will hover over the type of the array, it will show you the structure
 
 export const projects = [
+  {
+    title: "Slicely: An Enterprise-Grade SaaS app",
+    path: "/slicely",
+    description:
+      "An app built to allow you to manage and get most out of PDF data with the help of AI",
+    tags: ["Next.js", "Supabase", "OpenAI", "TypeScript", "React"],
+    imageUrl: SlicelyImage,
+  },
   {
     title: "Figma Variable Explorer Plugin",
     path: "/figma-variable-explorer",
