@@ -42,7 +42,7 @@ export const projects = [
   {
     title: "Slicely: An Enterprise-Grade SaaS app",
     path: "/slicely",
-    liveUrl: "",
+    liveUrl: "https://youtu.be/SwEA88-HC9M",
     github: "",
     description:
       "An app built to allow you to manage and get most out of PDF data with the help of AI",
