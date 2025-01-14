@@ -18,15 +18,16 @@ const Header = () => {
           border-opacity-40 bg-white bg-opacity-80 shadow-lg
           shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6
           sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full
-          py-2 dark:bg-gray-800/70 dark:border-gray-700
+          dark:bg-gray-800/70 dark:border-gray-700
+          px-3 sm:px-6
         "
         initial={{ y: -200, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
         <ul
-          className="flex flex-wrap w-[22rem] items-center justify-center gap-y-1
-        text-[0.9rem] font-medium text-gray-500
-        sm:w-[initial] sm:flex-nowrap sm:gap-5"
+          className="flex w-full items-center justify-around gap-y-1
+          text-[0.8rem] sm:text-[0.9rem] font-medium text-gray-500
+          sm:w-[initial] sm:flex-nowrap sm:gap-5"
         >
           {links.map((link) => {
             const isActive = activeSession === link.name;
@@ -41,8 +42,8 @@ const Header = () => {
               >
                 <Link
                   className={clsx(
-                    `w-full h-full flex items-center justify-center px-3 py-2 hover:text-gray-950
-                     transition-colors`,
+                    `flex items-center justify-center px-2 sm:px-3 py-2 hover:text-gray-950
+                     transition-colors whitespace-nowrap`,
                     {
                       "text-gray-950": isActive,
                       "text-gray-500": !isActive,

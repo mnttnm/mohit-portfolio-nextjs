@@ -20,7 +20,7 @@ const AboutMe = () => {
       transition={{ delay: 0.175, type: "tween" }}
     >
       <SectionHeading heading="About Me" />
-      <p className="text-lg text-center mt-8 leading-9 dark:text-white/60">
+      <p className="text-base sm:text-lg text-center mt-8 leading-8 sm:leading-9 dark:text-white/60">
         Hey there! I&#39;m <strong>Mohit</strong>, a tech enthusiast
         with a passion for building meaningful products and crafting
         great user experiences. Over the past nine years, I&#39;ve had

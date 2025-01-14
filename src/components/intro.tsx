@@ -65,69 +65,73 @@ function Intro() {
           of product of all stages.
         </motion.h1>
         <motion.div
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row items-center gap-4 w-full px-4 sm:px-0 sm:w-auto"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <Link
-            href="#contact"
-            className="flex items-center justify-center rounded-full px-6 py-2 bg-gray-900 text-white text-center
-              hover:bg-gray-800
-              hover:scale-110
-              focus:scale-110
-              active:scale-105
-              transition
-            "
-          >
-            Contact Me
-          </Link>
-          <a
-            target="_blank"
-            href="https://docs.google.com/document/d/1Itws4h0E7V8QWUtIWbOVIgvDLWZ7OYfo18PBP5BdSho/edit?usp=sharing"
-            className="group flex items-center justify-center rounded-full px-6 py-2
-             bg-white dark:bg-white/10 text-gray-900 dark:text-white/60 text-center
-             hover:scale-110
-              focus:scale-110
-              active:scale-105
-              transition"
-          >
-            Resume
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tatermohit/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center
-              hover:scale-110
-              focus:scale-110
-              active:scale-105
-              transition"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/mnttnm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center text-[1.25rem] hover:scale-110
-              focus:scale-110
-              active:scale-105
-              transition"
-          >
-            <FaGithubSquare />
-          </a>
-          <a
-            href="https://twitter.com/tatermohit"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center text-[1.25rem] hover:scale-110
-              focus:scale-110
-              active:scale-105
-              transition"
-          >
-            <FaTwitter />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <Link
+              href="#contact"
+              className="w-full sm:w-auto flex items-center justify-center rounded-full px-6 py-2 bg-gray-900 text-white text-center
+                hover:bg-gray-800
+                hover:scale-110
+                focus:scale-110
+                active:scale-105
+                transition
+              "
+            >
+              Contact Me
+            </Link>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/1Itws4h0E7V8QWUtIWbOVIgvDLWZ7OYfo18PBP5BdSho/edit?usp=sharing"
+              className="w-full sm:w-auto group flex items-center justify-center rounded-full px-6 py-2
+               bg-white dark:bg-white/10 text-gray-900 dark:text-white/60 text-center
+               hover:scale-110
+                focus:scale-110
+                active:scale-105
+                transition"
+            >
+              Resume
+            </a>
+          </div>
+          <div className="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/tatermohit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center
+                hover:scale-110
+                focus:scale-110
+                active:scale-105
+                transition"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/mnttnm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center text-[1.25rem] hover:scale-110
+                focus:scale-110
+                active:scale-105
+                transition"
+            >
+              <FaGithubSquare />
+            </a>
+            <a
+              href="https://twitter.com/tatermohit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center text-[1.25rem] hover:scale-110
+                focus:scale-110
+                active:scale-105
+                transition"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
