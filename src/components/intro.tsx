@@ -6,9 +6,10 @@ import MohitPortfolioImage from "../../public/mohit-tater-portrait.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaEye, FaFile, FaGithubSquare } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import { useSectionInView } from "@/hooks/hooks";
+import { FaTwitter } from "react-icons/fa6";
 
 function Intro() {
   const { ref } = useSectionInView({
@@ -59,13 +60,9 @@ function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Hi there! I &apos;m <strong>Mohit Tater</strong>, a software
-          developer with over <strong>9 years of experience</strong>.
-          I specialize in <strong>Frontend development</strong>,
-          particularly with <strong>ReactJS</strong> and{" "}
-          <strong>TypeScript</strong>. Currently seeking a{" "}
-          <strong>frontend-focused position</strong> in an innovative
-          early-stage company. 🚀
+          Hi there! I &apos;m <strong>Mohit Tater</strong> –– A Software Creative with
+          ~10 years of experience.  I’ve worked on everything from writing clean code to brainstorming design ideas and improving usability
+          of product of all stages.
         </motion.h1>
         <motion.div
           className="flex flex-col sm:flex-row gap-4"
@@ -86,8 +83,8 @@ function Intro() {
             Contact Me
           </Link>
           <a
-            href="/mohit-tater-resume.pdf"
-            download={true}
+            target="_blank"
+            href="https://docs.google.com/document/d/1Itws4h0E7V8QWUtIWbOVIgvDLWZ7OYfo18PBP5BdSho/edit?usp=sharing"
             className="group flex items-center justify-center rounded-full px-6 py-2
              bg-white dark:bg-white/10 text-gray-900 dark:text-white/60 text-center
              hover:scale-110
@@ -95,11 +92,7 @@ function Intro() {
               active:scale-105
               transition"
           >
-            Download Resume
-            <BiDownload
-              className="ml-2      
-              transition group-hover:translate-x-1"
-            />
+            Resume
           </a>
           <a
             href="https://www.linkedin.com/in/tatermohit/"
@@ -123,6 +116,17 @@ function Intro() {
               transition"
           >
             <FaGithubSquare />
+          </a>
+          <a
+            href="https://twitter.com/tatermohit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center rounded-full p-4 bg-white dark:bg-white/10 text-gray-900  dark:text-white/60 text-center text-[1.25rem] hover:scale-110
+              focus:scale-110
+              active:scale-105
+              transition"
+          >
+            <FaTwitter />
           </a>
         </motion.div>
       </div>

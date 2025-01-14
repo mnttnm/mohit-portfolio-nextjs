@@ -1,9 +1,7 @@
-import projectImage from "@/../public/project-image.png";
 import FigmaPluginImage from "@/../public/figma-variable-explorer.png";
-import SchoolAppImage from "../../public/school-app.png";
-import CommunityFairImage from "../../public/community-explorer.png";
 import RaycastExtensionImage from "../../public/raycast-extension.png";
 import SlicelyImage from "@/../public/slicely.png";
+import GetItRightImage from "@/../public/getitright.png";
 
 import React from "react";
 import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
@@ -42,8 +40,8 @@ export const projects = [
   {
     title: "Slicely: An Enterprise-Grade SaaS app",
     path: "/slicely",
-    liveUrl: "",
-    github: "",
+    liveUrl: "https://slicely.app",
+    github: "https://github.com/mnttnm/slicely",
     description:
       "An app built to allow you to manage and get most out of PDF data with the help of AI",
     tags: ["Next.js", "Supabase", "OpenAI", "TypeScript", "React"],
@@ -56,7 +54,7 @@ export const projects = [
       "https://www.figma.com/community/plugin/1310888112326715990/figma-variable-explorer",
     github: "https://github.com/mnttnm/figma-variable-explorer",
     description:
-      "A tool built using ReactJS for Figma. ~4000 users are currently using it",
+      "A tool built using ReactJS for Figma. ~5000 users are currently using it",
     tags: [
       "HTML",
       "CSS",
@@ -68,6 +66,16 @@ export const projects = [
     imageUrl: FigmaPluginImage,
   },
   {
+    title: "GetItRight: Landing Page",
+    path: "/get-it-right",
+    liveUrl: "https://getitright.design",
+    github: "",
+    description:
+      "An agency landing page with support for blog",
+    tags: ["Astro", "Javascript", "HTML", "CSS"],
+    imageUrl: GetItRightImage,
+  },
+  {
     title: "Raycast extension for Google Docs",
     path: "/brain-basket",
     liveUrl: "https://www.raycast.com/tatermohit/note-in-google-doc",
@@ -76,26 +84,7 @@ export const projects = [
       "An extension built on top of Google Docs APIs and Raycast's developer SDK ~250 users are currently using it",
     tags: ["Google API", "Raycast", "Typescript", "React"],
     imageUrl: RaycastExtensionImage,
-  },
-  {
-    title: "Community Fair (WIP)",
-    path: "/community-fair",
-    liveUrl: "",
-    github: "",
-    description: "A Fullstack web app built with NextJS and Supabase",
-    tags: ["NextJS", "Supabase", "Tailwind", "ShadCN UI"],
-    imageUrl: CommunityFairImage,
-  },
-  {
-    title: "School Management App (Mobile)",
-    path: "/school-management-app",
-    liveUrl: "",
-    github: "",
-    description:
-      "Designed and CoDeveloped a concept app for attendance management in a school",
-    tags: ["React Native", "Supabase", "CSS"],
-    imageUrl: SchoolAppImage,
-  },
+  }
 ] as const;
 
 // frontend skills
@@ -171,10 +160,10 @@ export const skills = [
 
 export const experiencesData = [
   {
-    title: "Freelance",
+    title: "Self-Employed",
     location: "Bengaluru, India",
     description:
-      "Self-Employed, working on various projects including a Figma plugin with ~4000 users, an Attendance Manager App using React Native and Supabase, and a Raycast extension for Google Docs with ~250 users.",
+      "Self-Employed, working on client project and personal projects while making progress of my journey of becoming a Design Engineer",
     icon: React.createElement(LuBriefcase),
     date: "Dec 2023 – Present",
   },

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/hooks/hooks";
 import { TbBrandGithub, TbGlobe } from "react-icons/tb";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const Projects = () => {
   const { ref } = useSectionInView({
@@ -76,10 +77,10 @@ const Project = ({
           <h3 className="font-semibold text-xl">{title}</h3>
           <div className="flex gap-2 -mt-1">
             {github && <a href={github} target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 bg-gray-300/80 dark:bg-white/10 rounded-full p-2 dark:hover:text-gray-400">
-              <TbBrandGithub className="w-4 h-4" />
+              <FaGithub className="w-4 h-4" />
             </a>}
             {liveUrl && <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 bg-gray-300/80 dark:bg-white/10 rounded-full p-2 dark:hover:text-gray-400">
-              <TbGlobe className="w-4 h-4" />
+              <FaGlobe className="w-4 h-4" />
             </a>}
           </div>
           <p className="leading-relaxed text-gray-700 dark:text-gray-200">
