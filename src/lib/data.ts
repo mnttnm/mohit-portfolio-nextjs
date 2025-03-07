@@ -2,6 +2,7 @@ import FigmaPluginImage from "@/../public/figma-variable-explorer.png";
 import RaycastExtensionImage from "../../public/raycast-extension.png";
 import SlicelyImage from "@/../public/slicely.png";
 import GetItRightImage from "@/../public/getitright.png";
+import WeeklyPlannerImage from "@/../public/weekly-tracker.png";
 
 import React from "react";
 import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
@@ -74,6 +75,16 @@ export const projects = [
       "An agency landing page with support for blog",
     tags: ["Astro", "Javascript", "HTML", "CSS"],
     imageUrl: GetItRightImage,
+  },
+  {
+    title: "Weekly Planner and Tracker",
+    path: "/weekly-planner",
+    liveUrl: "https://weekly-tracker-better-u.vercel.app/",
+    github: "https://github.com/mnttnm/weekly-tracker-better-u",
+    description:
+      "An app I built to plan, track and reflect on my weekly activities to keep myself accountable for a community that I'm a part of",
+    tags: ["Next.js", "Tailwind", "TypeScript", "React"],
+    imageUrl: WeeklyPlannerImage,
   },
   {
     title: "Raycast extension for Google Docs",

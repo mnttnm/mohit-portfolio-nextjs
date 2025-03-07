@@ -6,7 +6,6 @@ import { projects } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/hooks/hooks";
-import { TbBrandGithub, TbGlobe } from "react-icons/tb";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const Projects = () => {
